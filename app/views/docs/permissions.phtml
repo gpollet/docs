@@ -22,7 +22,7 @@
 
 <h2 id="server-integration"><a href="/docs/permissions#server-integration">Server Integration</a></h2>
 
-<p>A server or <a href="/docs/admin">admin integration</a> can be used for increased flexibility. When using a Server SDK in combination with the proper <a href="/docs/keys#scopes">API key scopes</a>, you can have any type of access to any of your project resources regardless of their permissions.</p>
+<p>A server integration can be used for increased flexibility. Client SDKs operates in the scope of the current logged-in user and usually using a client-side integration, while the Server SDKs are integrated from the server-side and has access to all resources that are within the scope of an API key. This means, server integrations ignore access permission defined for users and is only restricted by the API key they use.</p>
 
 <p>Using the server integration flexibility, you can change resource permissions, share resources between different users and teams, or edit and delete them without any limitations.</p>
 
