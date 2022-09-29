@@ -174,7 +174,7 @@ $paramSDK = (!empty($sdk)) ? '?sdk='.$sdk : '';
             </div>
             <div class="col span-4 clear">
                 <form class="pull-end desktops-only" onchange="this.submit()"
-                      method="get" action="/docs/<?php echo $this->escape($family); ?>/<?php echo $serviceName; ?>">
+                    method="get" action="/docs/<?php echo $this->escape($family); ?>/<?php echo $serviceName; ?>#<?php echo $operation['operationId']; ?>">
 
                     <input type="hidden" name="sdk" value="<?php echo $this->escape($sdk); ?>" />
 
