@@ -21,8 +21,7 @@
 
 <h2><a href="/docs/databases#collection" id="collection">Create Your Collections</a></h2>
 <p>
-    Appwrite uses collections as containers of documents.
-    The terms collections and documents are used because the Appwrite JSON REST API resembles the API of a traditional NoSQL database. That said, internally, Appwrite can support both SQL and NoSQL database adapters like MariaDB, MySQL, or MongoDB. When working with an SQL adapter, Appwrite will treat your collections as tables and documents as rows on native SQL tables.
+The Databases Service uses collections as containers of documents similar to NoSQL databases. The concept of collections and documents feel more natural when accessed REST and GraphQL APIs, but the Databases Service can be backed by both SQL and NoSQL database adaptors.
 </p>
 
 <p>
@@ -108,7 +107,7 @@
             <pre class="line-numbers"><code class="prism language-javascript" data-prism>import { Client, Databases } from "appwrite";
 
 const client = new Client()
-    .setEndpoint('https://[HOSTNAME_OR_IP]/v1')
+    .setEndpoint('https://cloud.appwrite.io/v1')
     .setProject('[PROJECT_ID]');
 
 const databases = new Databases(client);
@@ -134,7 +133,7 @@ promise.then(function (response) {
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://[HOSTNAME_OR_IP]/v1')
+        .setEndpoint('https://cloud.appwrite.io/v1')
         .setProject('[PROJECT_ID]');
 
     final databases = Databases(client);
@@ -160,7 +159,7 @@ import io.appwrite.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]")
 
     val databases = Databases(client)
@@ -186,7 +185,7 @@ import AppwriteModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]")")
 
     let databases = Databases(client)
@@ -223,7 +222,7 @@ func main() async throws {
             <pre class="line-numbers"><code class="prism language-javascript" data-prism>import { Client, Databases, Query } from "appwrite";
 
 const client = new Client()
-    .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+    .setEndpoint("https://cloud.appwrite.io/v1")
     .setProject("[PROJECT_ID]")")
 
 const databases = new Databases(client);
@@ -251,7 +250,7 @@ promise.then(function (response) {
 
 void main() async {
     final client = Client()
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]")")
 
     final databases = Databases(client);
@@ -280,7 +279,7 @@ import io.appwrite.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]")
 
     val databases = Databases(client)
@@ -307,7 +306,7 @@ import AppwriteModels
 
 func main() async throws{
     let client = Client()
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]")
 
     let databases = Databases(client)
@@ -414,7 +413,7 @@ func main() async throws{
             <pre class="line-numbers"><code class="prism language-javascript" data-prism>import { Client, Databases, Query } from "appwrite";
 
 const client = new Client()
-    .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+    .setEndpoint("https://cloud.appwrite.io/v1")
     .setProject("[PROJECT_ID]");
 
 const databases = new Databases(client);
@@ -436,7 +435,7 @@ databases.listDocuments(
 
 void main() async {
     final client = Client()
-        .setEndpoint('https://[HOSTNAME_OR_IP]/v1')
+        .setEndpoint('https://cloud.appwrite.io/v1')
         .setProject('[PROJECT_ID]');
 
     final databases = Databases(client);
@@ -465,7 +464,7 @@ import io.appwrite.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]")
 
     val databases = Databases(client)
@@ -493,7 +492,7 @@ import AppwriteModels
 
 func main() async throws {
     let client = Client()
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]")
 
     let databases = Databases(client)
@@ -560,7 +559,7 @@ func main() async throws {
             <pre class="line-numbers"><code class="prism language-javascript" data-prism>import { Client, Databases, Query } from "appwrite";
 
 const client = new Client()
-    .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+    .setEndpoint("https://cloud.appwrite.io/v1")
     .setProject("[PROJECT_ID]");
 
 const databases = new Databases(client);
@@ -581,7 +580,7 @@ databases.listDocuments(
 
 void main() async {
     final client = Client()
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]");
 
     final databases = Databases(client);
@@ -609,7 +608,7 @@ import io.appwrite.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]")
 
     val databases = Databases(client)
@@ -636,7 +635,7 @@ import AppwriteModels
 
 func main() async throws {
     let client = Client()
-      .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+      .setEndpoint("https://cloud.appwrite.io/v1")
       .setProject("[PROJECT_ID]")
 
     let databases = Databases(client)
@@ -666,7 +665,7 @@ func main() async throws {
             <pre class="line-numbers"><code class="prism language-javascript" data-prism>import { Client, Databases, Query } from "appwrite";
 
 const client = new Client()
-    .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+    .setEndpoint("https://cloud.appwrite.io/v1")
     .setProject("[PROJECT_ID]");
 
 const databases = new Databases(client);
@@ -688,7 +687,7 @@ databases.listDocuments(
 
 void main() async {
     final client = Client()
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]");
 
     final databases = Databases(client);
@@ -716,7 +715,7 @@ import io.appwrite.services.Databases
 
 suspend fun main() {
     val client = Client(applicationContext)
-        .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+        .setEndpoint("https://cloud.appwrite.io/v1")
         .setProject("[PROJECT_ID]")
 
     val databases = Databases(client)
@@ -744,7 +743,7 @@ import AppwriteModels
 
 func main() async throws {
     let client = Client()
-      .setEndpoint("https://[HOSTNAME_OR_IP]/v1")
+      .setEndpoint("https://cloud.appwrite.io/v1")
       .setProject("[PROJECT_ID]")
 
     let databases = Databases(client)
